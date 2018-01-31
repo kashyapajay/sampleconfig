@@ -1,0 +1,12 @@
+---
+applications:
+- name: sample-config
+  host: sample-config
+  memory: 1G
+  domain: dev.px-np.com
+  instances: 1
+  buildpack: java_buildpack
+  env:
+    spring.application.name: sample-config
+  services:
+    - Config-Server
